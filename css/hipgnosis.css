@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+body{background-color: #2F2C40; width: 100%;}
+
+/* 폰트 */
+@font-face {
+         font-family: 'Giants-Bold';
+         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
+         font-weight: 700;
+         font-style: normal;
+     }
+     @font-face {
+         font-family: 'Giants-Inline';
+         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+         font-weight: normal;
+         font-style: normal;
+     }
+
+/* 모바일 */
+@media (max-width:768px){
+         #hipgnosis_wrap{height:10000px;}
+         header{width: 100%;;background: none; position: absolute;}
+         #logo{width: 100%; padding-left: 1%;}
+         #logo img{width: 200px;}
+         #mainphoto{width: 100%; height: auto; background-position: center; background-size: cover; }
+         #mainphoto img{width: 100%; height: 100vh;}
+         
+
+
+         /* 전시 타이틀 */
+         #s1_hipnogsis_title{height: 1500px; width: 100%;}
+         .text{text-align: center; margin-top: 60px;}
+         .text>h1{color: #96CCD9; font-size: 50px; font-family: 'Giants-Bold';
+                  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
+                  font-weight: 700;
+                  font-style: normal;}
+         .text>p{color: #96CCD9; font-size: 18px;font-weight: 600;} 
+
+          /* 마퀴이벤트 */
+          .maqee{width: 100vw; margin-bottom: 12vw; display: flex;
+            font-family: 'Giants-Inline';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal; }
+          .maqee:nth-child(2){margin-top: 30vh; transform: rotate(-2deg);background-color: #FF24F6;}
+          .maqee:nth-child(3){ transform: rotate(2deg);background-color: #F2AB27;justify-content: flex-end;}
+          .maqee:nth-child(4){ transform: rotate(-2deg);background-color: #5800ff;}
+          .maqee:nth-child(5){ transform: rotate(2deg);background-color: #C5F222; 
+         justify-content: flex-end; margin-bottom: 10px;}
+         .maqee>p{display: flex; padding: 4vh 0; font-size: 15px;}
+
+
+
+         /* 힙노시스 소개란 */
+         #s2_hipnogsis_about{width: 100%; height: 1429px; background-color: #F2AB27;}
+         .about{text-align: center;padding-top: 50px;}
+         .about>h1{color: #2F2C40; font-size: 70px; font-weight: 800; font-family: 'Giants-Inline';
+                  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+                  font-weight: normal;
+                  font-style: normal;}
+         .about>p{color: #2F2C40; font-size: 14px; font-weight: 600;}
+
+         /* 전시 뷰포인트 */
+         #s3_hipnogsis_viewpoint{width: 100%;height: 6803px;}
+         .viewp{text-align: center;}
+         .viewp>h1{color: #C5F222;}
+         .vp1>h2{color: #96CCD9;}
+         .vp1>p{color: #F2F2F2;}
+         .vp2>h2{color:#F2AB27 ;}
+         .vp2>p{color: #F2F2F2;}
+         .vp3>h2{color:#FF24F6 ;}
+         .vp3>p{color: #F2F2F2;}
+
+         /* 전시 프리뷰 */
+         #s4_hipnogsis_preview{width: 100%; height: 1429px;}
+         #s5_hipnogsis_tiket{width: 100%; height: 1064px; background-color: #5D768C;}
+         #s6_hipnogsis_notice{width: 100%; height: 1410px; }
+}
+
+
+@media(min-width:769px) and (max-width:1399px){
+         header{width: 100%;;background: none; position: absolute;}
+         #logo{width: 100%;padding-left: 1%;}
+         #logo img{width: 230px;}
+         #mainphoto{width: 100%; height: auto;background-position: center;background-size: cover;}
+         #mainphoto img{width: 100%;height: 100vh;}
+         
+         
+          /* 전시 타이틀 */
+         #s1_hipnogsis_title{height: 2031px; width: 100%;}
+         .text{text-align: center;margin-top: 60px;}
+         .text>h1{color: #96CCD9; font-size: 70px;font-family: 'Giants-Bold';
+                  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
+                  font-weight: 700;
+                  font-style: normal;}
+         .text>p{color: #96CCD9; font-size: 30px;font-weight: 600;} 
+
+          /* 마퀴이벤트 */
+          .maqee{width: 100vw; margin-bottom: 6vw; display: flex;}
+          .maqee:nth-child(2){margin-top: 15vw; transform: rotate(-2deg);background-color: #ff3796;}
+          .maqee:nth-child(3){ transform: rotate(2deg);background-color: #ecfe04;justify-content: flex-end;}
+          .maqee:nth-child(4){ transform: rotate(-2deg);background-color: #5800ff;}
+          .maqee:nth-child(5){ transform: rotate(2deg);background-color: #33ff33; 
+         justify-content: flex-end; margin-bottom: 100vh;}
+         .maqee>p{display: flex; padding: 4vh 0; font-size: clamp(2vw, 8vw,5rem); }
+
+         /* 힙노시스 소개란 */
+         #s2_hipnogsis_about{width: 100%; height: 1429px; background-color: #F2AB27;}
+         .about{text-align: center; padding-top: 50px;}
+         .about>h1{color: #2F2C40; font-size: 80px;font-weight: 800;font-family: 'Giants-Inline';
+                  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+                  font-weight: normal;
+                  font-style: normal;}
+         .about>p{color: #2F2C40; font-size: 28px;font-weight: 600;}
+
+
+         /* 전시 뷰포인트 */
+         #s3_hipnogsis_viewpoint{width: 100%;height: 6803px;}
+         .viewp{text-align: center;}
+         .viewp>h1{color: #C5F222;}
+         .vp1>h2{color: #96CCD9;}
+         .vp1>p{color: #F2F2F2;}
+         .vp2>h2{color:#F2AB27 ;}
+         .vp2>p{color: #F2F2F2;}
+         .vp3>h2{color:#FF24F6 ;}
+         .vp3>p{color: #F2F2F2;}
+         /* 전시 프리뷰 */
+         #s4_hipnogsis_preview{width: 100%; height: 1429px;}
+         #s5_hipnogsis_tiket{width: 100%; height: 1064px; background-color: #5D768C;}
+         #s6_hipnogsis_notice{width: 100%; height: 1410px; }
+}
+
+@media(min-width:1400px){
+         header{width: 100%;;background: none; position: absolute;}
+         #logo{width: 100%;padding-left: 1%;}
+         #logo img{width: 250px;}
+         #mainphoto{width: 100%; height: auto;background-position: center;background-size: cover;}
+         #mainphoto img{width: 100%;height: 100vh;}
+         
+        
+          /* 전시 타이틀 */
+         #s1_hipnogsis_title{height: 2031px; width: 100%; }
+         .text{text-align: center;margin-top: 60px;}
+         .text>h1{color: #96CCD9; font-size: 80px; font-family: 'Giants-Bold';
+                  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
+                  font-weight: 700;
+                  font-style: normal;}
+         .text>p{color: #96CCD9; font-size: 30px;font-weight: 600;} 
+
+         /* 마퀴이벤트 */
+         .maqee{width: 100vw; margin-bottom: 6vw; display: flex;}
+         .maqee:nth-child(2){margin-top: 25vh; transform: rotate(-2deg);background-color: #ff3796;}
+         .maqee:nth-child(3){ transform: rotate(2deg);background-color: #ecfe04;justify-content: flex-end;}
+         .maqee:nth-child(4){ transform: rotate(-2deg);background-color: #5800ff;}
+         .maqee:nth-child(5){ transform: rotate(2deg);background-color: #33ff33; 
+        justify-content: flex-end; margin-bottom: 100vh;}
+        .maqee>p{display: flex; padding: 5vh 0; font-size: clamp(2vw, 8vw,5rem);}
+
+         /* 힙노시스 소개란 */
+         #s2_hipnogsis_about{width: 100%; height: 1429px; background-color: #F2AB27;}
+         .about{text-align: center;padding-top: 50px;}
+         .about>h1{color: #2F2C40; font-size: 80px;font-weight: 800;font-family: 'Giants-Inline';
+                  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+                  font-weight: normal;
+                  font-style: normal;}
+         .about>p{color: #2F2C40; font-size: 30px;font-weight: 600;}
+
+         /* 전시 뷰포인트 */
+         #s3_hipnogsis_viewpoint{width: 100%;height: 6803px;}
+         .viewp{text-align: center;}
+         .viewp>h1{color: #C5F222;}
+         .vp1>h2{color: #96CCD9;}
+         .vp1>p{color: #F2F2F2;}
+         .vp2>h2{color:#F2AB27 ;}
+         .vp2>p{color: #F2F2F2;}
+         .vp3>h2{color:#FF24F6 ;}
+         .vp3>p{color: #F2F2F2;}
+         /* 전시 프리뷰 */
+         #s4_hipnogsis_preview{width: 100%; height: 1429px;}
+         #s5_hipnogsis_tiket{width: 100%; height: 1064px; background-color: #5D768C;}
+         #s6_hipnogsis_notice{width: 100%; height: 1410px; }
+          }
