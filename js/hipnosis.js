@@ -78,3 +78,11 @@ function openNav(){
 function closeNav(){
          document.getElementById("menu").style.width ="0%"
 }
+
+
+// Can also be used with $(document).ready()
+$(window).load(function() {
+         $('.swiper_wrap').flexslider({
+           animation: "slide"
+         });
+       });

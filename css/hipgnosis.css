@@ -18,7 +18,7 @@ body{background-color: #2F2C40; width: 100%;}
 
 /* 모바일 */
 @media (max-width:768px){
-         #hipgnosis_wrap{height:10000px;}
+         #hipgnosis_wrap{height:auto; width: 100%;}
          header{width: 100%;;background: none; position: absolute;}
          #logo{width: 100%; padding-left: 1%;}
          #logo img{width: 200px;}
@@ -30,14 +30,11 @@ body{background-color: #2F2C40; width: 100%;}
          /* 전시 타이틀 */
          #s1_hipnogsis_title{height: 1500px; width: 100%;}
          .text{text-align: center; margin-top: 60px;}
-         .text>h1{color: #96CCD9; font-size: 50px; font-family: 'Giants-Bold';
-                  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
-                  font-weight: 700;
-                  font-style: normal;}
-         .text>p{color: #96CCD9; font-size: 18px;font-weight: 600;} 
+         .text>h1{color: #96CCD9; font-size: 55px; font-family: 'Giants-Inline';font-weight: 700;}
+         .text>p{color: #96CCD9; font-size: 17px;font-weight: 700;} 
 
           /* 마퀴이벤트 */
-          .maqee{width: 100vw; margin-bottom: 12vw; display: flex;
+          /* .maqee{width: 100vw; margin-bottom: 12vw; display: flex;
             font-family: 'Giants-Inline';
             src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
             font-weight: normal;
@@ -47,32 +44,119 @@ body{background-color: #2F2C40; width: 100%;}
           .maqee:nth-child(4){ transform: rotate(-2deg);background-color: #5800ff;}
           .maqee:nth-child(5){ transform: rotate(2deg);background-color: #C5F222; 
          justify-content: flex-end; margin-bottom: 10px;}
-         .maqee>p{display: flex; padding: 4vh 0; font-size: 15px;}
+         .maqee>p{display: flex; padding: 4vh 0; font-size: 15px;} */
 
 
 
          /* 힙노시스 소개란 */
-         #s2_hipnogsis_about{width: 100%; height: 1429px; background-color: #F2AB27;}
+         #s2_hipnogsis_about{width: 100%; height: auto; background-color: #F2AB27;border-radius: 20px;}
+         #s2_hipnogsis_about>h1{color: #2F2C40; font-size: 70px; font-weight: 800; font-family: 'Giants-Inline'; text-align: center;padding-top: 60px;}
+
+         /* 레코드 */
+         #record{ padding-top: 80px; justify-content: center;
+          align-items: center; }
+         .album{width: 100%;}
+         .album img{height: 350px;;position: absolute; 
+          -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
+
+          @-webkit-keyframes slide-bottom {
+            0% {
+              -webkit-transform: translateY(0);
+                      transform: translateY(0);
+            }
+            100% {
+              -webkit-transform: translateY(100px);
+                      transform: translateY(100px);
+            }
+          }
+          @keyframes slide-bottom {
+            0% {
+              -webkit-transform: translateY(0);
+                      transform: translateY(0);
+            }
+            100% {
+              -webkit-transform: translateY(100px);
+                      transform: translateY(100px);
+            }
+          }
+          
+          
+          
+
+         .lp{width: 100%; padding-top: 30px;} 
+          .lp img{width: 300px;-webkit-animation: rotate-in-center 8s linear infinite ;
+	        animation: rotate-in-center 8s linear infinite ; animation-name: lp;}
+          
+          @-webkit-keyframes lp {
+            0% {
+              -webkit-transform: rotate(0);
+                      transform: rotate(0);
+            }
+            100% {
+              -webkit-transform: rotate(360deg);
+                      transform: rotate(360deg);
+            }
+          }
+          @keyframes lp {
+            0% {
+              -webkit-transform: rotate(0);
+                      transform: rotate(0);
+            }
+            100% {
+              -webkit-transform: rotate(360deg);
+                      transform: rotate(360deg);
+            }
+          }
+
+
          .about{text-align: center;padding-top: 50px;}
-         .about>h1{color: #2F2C40; font-size: 70px; font-weight: 800; font-family: 'Giants-Inline';
-                  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
-                  font-weight: normal;
-                  font-style: normal;}
-         .about>p{color: #2F2C40; font-size: 14px; font-weight: 600;}
+         .about>p{color: #2F2C40; font-size: 13px; font-weight: 600;
+        padding-bottom: 70px;}
+
+          
+
+
+
+
 
          /* 전시 뷰포인트 */
-         #s3_hipnogsis_viewpoint{width: 100%;height: 6803px;}
+         #s3_hipnogsis_viewpoint{width: 100%;height: auto; border-radius: 20px;}
          .viewp{text-align: center;}
-         .viewp>h1{color: #C5F222;}
-         .vp1>h2{color: #96CCD9;}
-         .vp1>p{color: #F2F2F2;}
-         .vp2>h2{color:#F2AB27 ;}
-         .vp2>p{color: #F2F2F2;}
-         .vp3>h2{color:#FF24F6 ;}
-         .vp3>p{color: #F2F2F2;}
+         .viewp>h1{color: #C5F222;font-size: 70px;font-family: 'Giants-Inline';}
+         .vp1>h2{color: #96CCD9;font-size: 20px;}
+         .vp1>p{color: #F2F2F2;font-size: 15px;}
+         .vp2>h2{color:#F2AB27 ;font-size: 20px;}
+         .vp2>p{color: #F2F2F2;font-size: 15px;}
+         .vp3>h2{color:#FF24F6 ;font-size: 20px;}
+         .vp3>p{color: #F2F2F2;font-size: 15px;}
+
+
+         #pic_1{width: 100%;padding: 2%;padding-top: 20px; padding-bottom: 20px;}
+         #pic_1 img{width: 100%;padding-bottom: 20px;}
+         #pic_2{width: 100%;padding: 2%;padding-bottom: 20px;}
+         #pic_2 img{width: 100%;padding-bottom: 20px;}
+         #pic_3{width: 100%;padding: 2%;padding-bottom: 20px;}
+         #pic_3 img{width: 100%;padding-bottom: 20px;}
+
+
 
          /* 전시 프리뷰 */
          #s4_hipnogsis_preview{width: 100%; height: 1429px;}
+         #s4_hipnogsis_preview h1{color: #F2F2F2;font-size: 70px; text-align: center;font-family: 'Giants-Inline';margin-bottom: 50px;}
+
+         .swiper_wrap{background-position: center; background-size: cover; width: 80%; height: auto;}
+         .card{width: 100%; height: auto;display: flex;  flex-wrap: wrap; justify-content: center;}
+         .card> .card1{width: 80%;height: 30%;;border-radius: 50px;
+          background: linear-gradient(145deg, #ffffff, #dadada);
+        margin-bottom: 20px; display: block;}
+
+          .card1 h2{font-size: 27px; text-align: center; padding-top: 50px;}
+          .card1 p{font-size: 18px;font-weight: 600; padding: 20px; text-align: center; padding-bottom: 90px;}
+
+
+
+
          #s5_hipnogsis_tiket{width: 100%; height: 1064px; background-color: #5D768C;}
          #s6_hipnogsis_notice{width: 100%; height: 1410px; }
 }
@@ -89,43 +173,82 @@ body{background-color: #2F2C40; width: 100%;}
           /* 전시 타이틀 */
          #s1_hipnogsis_title{height: 2031px; width: 100%;}
          .text{text-align: center;margin-top: 60px;}
-         .text>h1{color: #96CCD9; font-size: 70px;font-family: 'Giants-Bold';
-                  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
-                  font-weight: 700;
-                  font-style: normal;}
-         .text>p{color: #96CCD9; font-size: 30px;font-weight: 600;} 
+         .text>h1{color: #96CCD9; font-size: 70px;font-family: 'Giants-Bold';font-weight: 700;}
+         .text>p{color: #96CCD9; font-size: 20px;font-weight: 600;} 
 
           /* 마퀴이벤트 */
-          .maqee{width: 100vw; margin-bottom: 6vw; display: flex;}
+          /* .maqee{width: 100vw; margin-bottom: 6vw; display: flex;}
           .maqee:nth-child(2){margin-top: 15vw; transform: rotate(-2deg);background-color: #ff3796;}
           .maqee:nth-child(3){ transform: rotate(2deg);background-color: #ecfe04;justify-content: flex-end;}
           .maqee:nth-child(4){ transform: rotate(-2deg);background-color: #5800ff;}
           .maqee:nth-child(5){ transform: rotate(2deg);background-color: #33ff33; 
          justify-content: flex-end; margin-bottom: 100vh;}
-         .maqee>p{display: flex; padding: 4vh 0; font-size: clamp(2vw, 8vw,5rem); }
+         .maqee>p{display: flex; padding: 4vh 0; font-size: clamp(2vw, 8vw,5rem); } */
 
          /* 힙노시스 소개란 */
          #s2_hipnogsis_about{width: 100%; height: 1429px; background-color: #F2AB27;}
+         #s2_hipnogsis_about>h1{color: #2F2C40; font-size: 80px;font-weight: 800;font-family: 'Giants-Inline';padding-top: 50px;text-align: center;}
+
+         /* 레코드 */
+         .record{display: flex; padding-top: 30px;}
+         .album{width: 100%;}
+         .album img{height: 500px; z-index: 5;}
+
+         .lp{width: 100%; padding-top: 30px;box-sizing: border-box;} 
+          .lp img{width: 450px;-webkit-animation: rotate-in-center 8s linear infinite ;
+	        animation: rotate-in-center 8s linear infinite ; animation-name: lp;}
+          @-webkit-keyframes lp {
+            0% {
+              -webkit-transform: rotate(0);
+                      transform: rotate(0);
+            }
+            100% {
+              -webkit-transform: rotate(360deg);
+                      transform: rotate(360deg);
+            }
+          }
+          @keyframes lp {
+            0% {
+              -webkit-transform: rotate(0);
+                      transform: rotate(0);
+            }
+            100% {
+              -webkit-transform: rotate(360deg);
+                      transform: rotate(360deg);
+            }
+          }
+
+
          .about{text-align: center; padding-top: 50px;}
-         .about>h1{color: #2F2C40; font-size: 80px;font-weight: 800;font-family: 'Giants-Inline';
-                  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
-                  font-weight: normal;
-                  font-style: normal;}
-         .about>p{color: #2F2C40; font-size: 28px;font-weight: 600;}
+         
+         .about>p{color: #2F2C40; font-size: 22px;font-weight: 600;}
 
 
          /* 전시 뷰포인트 */
-         #s3_hipnogsis_viewpoint{width: 100%;height: 6803px;}
+         #s3_hipnogsis_viewpoint{width: 100%;height:auto;border-radius: 20px;}
          .viewp{text-align: center;}
-         .viewp>h1{color: #C5F222;}
-         .vp1>h2{color: #96CCD9;}
-         .vp1>p{color: #F2F2F2;}
-         .vp2>h2{color:#F2AB27 ;}
-         .vp2>p{color: #F2F2F2;}
-         .vp3>h2{color:#FF24F6 ;}
-         .vp3>p{color: #F2F2F2;}
+         .viewp>h1{color: #C5F222;font-size: 70px;font-family: 'Giants-Inline';}
+         .vp1>h2{color: #96CCD9;font-size: 20px;}
+         .vp1>p{color: #F2F2F2;font-size: 15px;}
+         .vp2>h2{color:#F2AB27 ;font-size: 20px;}
+         .vp2>p{color: #F2F2F2;font-size: 15px;}
+         .vp3>h2{color:#FF24F6 ;font-size: 20px;}
+         .vp3>p{color: #F2F2F2;font-size: 15px;}
+
+         
          /* 전시 프리뷰 */
          #s4_hipnogsis_preview{width: 100%; height: 1429px;}
+         #s4_hipnogsis_preview h1{color: #F2F2F2;font-size: 70px; text-align: center;font-family: 'Giants-Inline';margin-bottom: 50px;}
+         #card{width: 100%; height: auto;display: flex;  flex-wrap: wrap; justify-content: center; }
+         #card> .card1{width: 80%;height: 30%;;border-radius: 50px;
+          background: linear-gradient(145deg, #ffffff, #dadada);
+        margin-bottom: 20px;}
+
+          .card1 h2{font-size: 27px; text-align: center; padding-top: 50px;}
+          .card1 p{font-size: 18px;font-weight: 600; padding: 20px; text-align: center; padding-bottom: 90px;}
+
+
+
          #s5_hipnogsis_tiket{width: 100%; height: 1064px; background-color: #5D768C;}
          #s6_hipnogsis_notice{width: 100%; height: 1410px; }
 }
@@ -141,42 +264,84 @@ body{background-color: #2F2C40; width: 100%;}
           /* 전시 타이틀 */
          #s1_hipnogsis_title{height: 2031px; width: 100%; }
          .text{text-align: center;margin-top: 60px;}
-         .text>h1{color: #96CCD9; font-size: 80px; font-family: 'Giants-Bold';
-                  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
-                  font-weight: 700;
-                  font-style: normal;}
-         .text>p{color: #96CCD9; font-size: 30px;font-weight: 600;} 
+         .text>h1{color: #96CCD9; font-size: 80px; font-family: 'Giants-Bold';}
+         .text>p{color: #96CCD9; font-size: 20px;font-weight: 600;} 
 
          /* 마퀴이벤트 */
-         .maqee{width: 100vw; margin-bottom: 6vw; display: flex;}
+         /* .maqee{width: 100vw; margin-bottom: 6vw; display: flex;}
          .maqee:nth-child(2){margin-top: 25vh; transform: rotate(-2deg);background-color: #ff3796;}
          .maqee:nth-child(3){ transform: rotate(2deg);background-color: #ecfe04;justify-content: flex-end;}
          .maqee:nth-child(4){ transform: rotate(-2deg);background-color: #5800ff;}
          .maqee:nth-child(5){ transform: rotate(2deg);background-color: #33ff33; 
         justify-content: flex-end; margin-bottom: 100vh;}
-        .maqee>p{display: flex; padding: 5vh 0; font-size: clamp(2vw, 8vw,5rem);}
+        .maqee>p{display: flex; padding: 5vh 0; font-size: clamp(2vw, 8vw,5rem);} */
 
          /* 힙노시스 소개란 */
          #s2_hipnogsis_about{width: 100%; height: 1429px; background-color: #F2AB27;}
+         
+         #s2_hipnogsis_about>h1{color: #2F2C40; font-size: 80px;font-weight: 800;font-family: 'Giants-Inline';padding-top: 50px; text-align: center;}
+         
+
+         /* 레코드 */
+         .record{display: flex;}
+         .album{width: 20%; margin-left: 30%;}
+         .album img{width: 700px;position: absolute; z-index: 5;}
+
+         .lp{width: 20%; text-align: center;padding-top: 30px;} 
+          .lp img{width: 650px;-webkit-animation: rotate-in-center 8s linear infinite ;
+	        animation: rotate-in-center 8s linear infinite ; animation-name: lp;}
+          @-webkit-keyframes lp {
+            0% {
+              -webkit-transform: rotate(0);
+                      transform: rotate(0);
+            }
+            100% {
+              -webkit-transform: rotate(360deg);
+                      transform: rotate(360deg);
+            }
+          }
+          @keyframes lp {
+            0% {
+              -webkit-transform: rotate(0);
+                      transform: rotate(0);
+            }
+            100% {
+              -webkit-transform: rotate(360deg);
+                      transform: rotate(360deg);
+            }
+          }
+
+
          .about{text-align: center;padding-top: 50px;}
-         .about>h1{color: #2F2C40; font-size: 80px;font-weight: 800;font-family: 'Giants-Inline';
-                  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
-                  font-weight: normal;
-                  font-style: normal;}
-         .about>p{color: #2F2C40; font-size: 30px;font-weight: 600;}
+         .about>p{color: #2F2C40; font-size: 22px;font-weight: 600;}
 
          /* 전시 뷰포인트 */
-         #s3_hipnogsis_viewpoint{width: 100%;height: 6803px;}
+         #s3_hipnogsis_viewpoint{width: 100%;height: auto;border-radius: 20px;}
          .viewp{text-align: center;}
-         .viewp>h1{color: #C5F222;}
-         .vp1>h2{color: #96CCD9;}
-         .vp1>p{color: #F2F2F2;}
-         .vp2>h2{color:#F2AB27 ;}
-         .vp2>p{color: #F2F2F2;}
-         .vp3>h2{color:#FF24F6 ;}
-         .vp3>p{color: #F2F2F2;}
+         .viewp>h1{color: #C5F222;font-size: 70px;font-family: 'Giants-Inline';}
+         .vp1>h2{color: #96CCD9;font-size: 20px;}
+         .vp1>p{color: #F2F2F2;font-size: 15px;}
+         .vp2>h2{color:#F2AB27 ;font-size: 20px;}
+         .vp2>p{color: #F2F2F2;font-size: 15px;}
+         .vp3>h2{color:#FF24F6 ;font-size: 20px;}
+         .vp3>p{color: #F2F2F2;font-size: 15px;}
+
+
+
          /* 전시 프리뷰 */
          #s4_hipnogsis_preview{width: 100%; height: 1429px;}
+         #s4_hipnogsis_preview h1{color: #F2F2F2;font-size: 70px; text-align: center;font-family: 'Giants-Inline';margin-bottom: 50px;}
+         #card{width: 100%; height: auto;display: flex;  flex-wrap: wrap; justify-content: center; }
+         #card> .card1{width: 30%;height: 40%;;border-radius: 50px;
+          background: linear-gradient(145deg, #ffffff, #dadada);
+        margin-bottom: 20px;}
+
+          .card1 h2{font-size: 27px; text-align: center; padding-top: 50px;}
+          .card1 p{font-size: 18px;font-weight: 600; padding: 20px; text-align: center; padding-bottom: 90px;}
+
+
          #s5_hipnogsis_tiket{width: 100%; height: 1064px; background-color: #5D768C;}
          #s6_hipnogsis_notice{width: 100%; height: 1410px; }
           }
+
+          
